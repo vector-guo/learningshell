@@ -5,3 +5,4 @@ the first day
 the second day use dev branch
 test global user config
 config github use ssh 
+this is the master line
