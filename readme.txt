@@ -4,3 +4,4 @@ one day one shell file
 the first day
 the second day use dev branch
 test global user config
+config github use ssh 
