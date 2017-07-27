@@ -4,3 +4,4 @@ one day one shell file
 the first day
 the second day use dev branch
 this is dev branch 
+i'm ubuntu server
