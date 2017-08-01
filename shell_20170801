@@ -1,0 +1,36 @@
+#!/bin/bash
+echo 'this shell for test $1 $2 $* $@'
+echo "..............................."
+
+index=1
+
+echo 'test $*'
+for arg in $*
+do 
+ echo "#$index = $arg"
+ let "index+=1"
+done
+
+index=1
+echo 'test "$*"'
+for arg in "$*"
+do 
+ echo "#$index = $arg"
+ let "index+=1"
+done
+
+index=1
+echo 'test $@'
+for arg in $@
+do 
+ echo "#$index = $arg"
+ let "index+=1"
+done
+
+index=1
+echo 'test "$@"'
+for arg in "$@"
+do 
+ echo "#$index = $arg"
+ let "index+=1"
+done
