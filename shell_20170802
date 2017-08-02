@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "test for IFS....."
+
+function print_args()
+{
+	index=1;
+	for arg in $@
+        do 
+         echo "#$index = $arg"
+	 let "index+=1";
+	done
+}
+var="one two three"
+echo "IFS default"
+print_args $var;
+
+
+echo 'IFS = :'
+IFS=:
+var="one:::two:three"
+print_args $var;
