@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "test for PATH life"
+
+your_id=$USER-on-$HOSTNAME
+echo "$your_id"
+echo "$PATH"
+PATH=$PATH:/home/rd
+echo "$PATH"
