@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "test for get string length"
+
+MINLINE=40
+while read line
+do
+ echo $line 
+ len=${#line}
+ if [ "$len" -lt "$MINLINE" ]
+ then echo 
+ fi
+done
