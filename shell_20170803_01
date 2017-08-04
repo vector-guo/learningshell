@@ -6,3 +6,6 @@ echo "$your_id"
 echo "$PATH"
 PATH=$PATH:/home/rd
 echo "$PATH"
+echo "$PWD"
+echo "${PWD##*/}"
+
