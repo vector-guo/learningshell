@@ -1,0 +1,26 @@
+#!/bin/bash
+echo "test for string "
+
+var=abc123456789abc123456789
+echo '$var=' "$var"
+
+echo '${var}=' "$var"
+echo '${var#a*c}=' "${var#a*c}"
+echo '${var##a*c}=' "${var##a*c}"
+
+echo ;echo; echo
+echo 'test declare'
+declare -i var;
+var=3;
+var+=1;
+var=var/2;
+echo '$var=' "$var"
+function test()
+{
+	echo "hello"
+}
+function test1()
+{
+	echo "hello"
+}
+declare -f
