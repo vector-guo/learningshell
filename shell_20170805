@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "test for while"
+
+declare -i a;
+a=1;
+while [ $a -le 19 ]
+do
+ a=a+1
+
+if [ $a -eq 3 ] || [ $a -eq 11 ]
+then
+ continue;
+fi 
+echo '$a=' "$a"
+done
