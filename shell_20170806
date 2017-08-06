@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#read 可以从文件中读入，每次读入一行，其实是以回车作为表示
+echo "test for read command"
+
+file="/etc/passwd"
+
+#read a b c d <$file
+
+# echo "$a ; $b ; $c ; $d ;"
+IFS=:
+while read name passwd uid guid fullname ignore
+do 
+echo "$name : $fullname ------$ignore"
+done <"$file"
