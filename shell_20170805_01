@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "test for case in esac"
+
+case "$1" in 
+
+-c )
+echo "config file is $2";;
+
+"-d" )
+echo "directory is $2";;
+
+* )
+echo "can't understand $1";;
+
+esac
