@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "this script copy current directory file to pointout "
+
+if [ -z $1 ]
+then 
+  echo "use $0 dest directory"
+  exit -1
+fi
+
+ls . | xargs -t -i cp {} $1
