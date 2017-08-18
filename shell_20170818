@@ -1,0 +1,17 @@
+#!/bin/bash
+#this function return sda1 used
+function watch_df()
+{
+	sda1_used=`df | grep sda1 | sed "s/%//g" | awk '{print $5}'`
+	echo "sda used $sda1_used percent"
+}
+#this function return memory used
+function watch_mem()
+{
+	memtotal=`cat /proc/meminfo | grep MemTotal | awk '{print $2}'`;
+	memfree=`cat /proc/meminfo | grep MemFree | awk '{print $2}'`;
+	let "memused=($memtotal-$memfree)*100/$memfree"
+	echo "memory used $memused percent"
+}
+watch_df;
+watch_mem;
