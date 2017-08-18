@@ -1,0 +1,6 @@
+#!/bin/bash
+echo 'test `` '
+pls=`ls -l`
+echo $pls
+echo;echo;echo;
+echo "$pls"
